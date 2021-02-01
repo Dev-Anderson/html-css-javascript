@@ -1,0 +1,38 @@
+body {  
+    text-align: center;
+}
+.cursor-box {
+    width: 186px;
+    height: 186px;
+    position: relative;
+    border-radius: 12px;
+    background: #881238;
+    box-shadow: 0px 4px 12px rgba(105,6, 38,0.25);
+    display: inline-block;
+    margin-left: 24px;
+    transition: 200ms ease;
+}
+.cursor-box:hover {
+    background-color: #bc144a;
+}
+.cursor-box:first-of-type {
+    margin-left: 0px;
+}
+.cursor-box p {
+    width: 100%;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 186px;
+    color: white;
+    pointer-events: none;
+}
+#poker-face {
+    cursor: url("img/happy.png"), auto;
+}
+#happy-face {
+    cursor: url("img/meh.png"), auto;
+}
+#sad-face {
+    cursor: url("img/sad.png"), auto;
+}
