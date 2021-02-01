@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+}
+#dog-wrapper {
+    width: 400px;
+    height: 250px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 250ms ease;
+}
+#dov-wrapper:active {
+    transform: scale(0.95);
+}
