@@ -1,0 +1,30 @@
+body {
+    background: black;
+}
+.s-hover-effect {
+    font-family: Releway, Arial;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    color: #ffffff;
+    position: relative;
+    cursor: pointer;
+}
+.s-hover-effect::before {
+    content: '';
+    width: 4px;
+    height: 4px;
+    position: absolute;
+    left: -0.5px;
+    bottom: 1px;
+    border-radius: 150%;
+    background: #18b4d7;
+    z-index: -1;
+    transition: 250ms ease;
+}
+.s-hover-effect:hover::before{
+    width: 42px;
+    height: 42px;
+    bottom: -13px;
+    left: -2px;
+}
